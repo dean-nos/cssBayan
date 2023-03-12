@@ -16,6 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .container h1 {
@@ -56,4 +58,37 @@ justify-content: center;
     right: 20px;
     font-size: 2em;
     color:red ;
+    transition: transform 1s;
+}
+.container .tab :hover .header::after{
+    color: cornflowerblue;
+}
+.container .tab input:checked ~ .header::after{
+    transform: rotate(135deg);
+}
+.container .tab .img{
+    max-height: 0;
+    overflow: hidden;
+    transition:1s;
+}
+
+.container .tab input:checked ~ .img{
+    max-height: 100vh;
+}
+
+.container .tab{
+    cursor: pointer;
+}
+
+.header{
+    cursor: pointer;
+}
+
+.container .tab:hover{
+    background-color: crimson;
+
+}
+.container .tab:checked{
+    background-color: rgb(5, 141, 0);
+
 }
