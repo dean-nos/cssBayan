@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'
+}
+
+body {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container h1 {
+    color: blueviolet;
+}
+
+.container h2,
+h3 {
+
+    color: rgb(78, 144, 13);
+}
+
+.container .tab {
+    background-color: rgb(244, 239, 100);
+    position: relative;
+    padding: 0 20px 20px;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.img {
+display: flex;
+justify-content: center;
+} 
+.container .tab input{
+    appearance: none;
+}
+.container .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.container .header::after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 2em;
+    color:red ;
+}
